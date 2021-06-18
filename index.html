@@ -28,12 +28,12 @@ Quit smoking, if you smoke.</td>
 		</tr>
 		<tr>
 			<td> Extract only index  </td>
-			<td>  $ORACLE_HOME/bin/impdp \'/ as sysdba\' \
-schemas=PRODCTL,PRODDTA \
-directory=EXP_DIR \
-CONTENT=METADATA_ONLY \
-INCLUDE="INDEX" \
-dumpfile=JDE82_schemas_exp_2017-07-06_122035.dmp \
+			<td>
+schemas=PRODCTL,PRODDTA 
+directory=EXP_DIR 
+CONTENT=METADATA_ONLY 
+INCLUDE="INDEX" 
+dumpfile=JDE82_schemas_exp_2017-07-06_122035.dmp 
 logfile=JDE82_schemas_exp.log </td>
 		</tr>
 	</table>
