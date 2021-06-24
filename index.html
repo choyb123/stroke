@@ -53,8 +53,25 @@ logfile=JDE82_schemas_exp.log </td>
 			<td>  alter user [user_name] quota unlimited on [tablespace_name]; </td>
 		</tr>
 		<tr>
-			<td> delete blank lines  </td>
-			<td> sed '/^$/d' </td>
+			<td> SQLplus return a small numeric value to shell, you can use the EXIT command </td>
+			<td> #!/bin/sh
+sqlplus -s testuser/pass > tabs << EOF
+SET SERVEROUTPUT ON
+SET FEEDBACK OFF
+DECLARE
+   tab_count number;
+BEGIN
+   SELECT count(*) INTO tab_count
+   FROM employee;
+
+   DBMS_OUTPUT.PUT_LINE(tab_count);
+END;
+/
+EXIT
+EOF
+
+tabcount=`cat tabs`
+echo You have $tabcount empployees. </td>
 		</tr>
 	</table>
 
