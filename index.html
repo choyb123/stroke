@@ -73,6 +73,21 @@ EOF
 tabcount=`cat tabs`
 echo You have $tabcount empployees. </td>
 		</tr>
+		<tr>
+			<td>Compare tables </td>
+			<td>  (select * from emp_copy
+ minus
+ select * from emp@lovemom) -- Rows in A that are not in B
+union all
+(
+ select * from emp@lovemom
+ minus
+ select * from emp_copy -- rows in B that are not in A
+)
+/
+  </td>
+		</tr>
+		<tr>
 	</table>
 
 </body>
