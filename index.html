@@ -49,6 +49,10 @@ logfile=JDE82_schemas_exp.log </td>
 			<td>  ALTER SYSTEM REGISTER;  </td>
 		</tr>
 		<tr>
+			<td> Co;imn district empty  </td>
+			<td> select * from cm_prem_eng where trim(district) is null; </td>
+		</tr>
+		<tr>
 			<td> alter user quota  </td>
 			<td>  alter user [user_name] quota unlimited on [tablespace_name]; </td>
 		</tr>
