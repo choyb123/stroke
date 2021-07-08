@@ -49,10 +49,6 @@ logfile=JDE82_schemas_exp.log </td>
 			<td>  SQL>  alter system set local_listener='(ADDRESS=(PROTOCOL=TCP)(HOST=yourIP)(PORT=1521))';  </td>
 		</tr>
 		<tr>
-			<td>  Pmon is responsible for registration of oracle server with listener. </td>
-			<td>  ALTER SYSTEM REGISTER;  </td>
-		</tr>
-		<tr>
 			<td> Column district empty  </td>
 			<td> select * from cm_prem_eng where trim(district) is null; </td>
 		</tr>
