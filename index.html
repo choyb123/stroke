@@ -83,13 +83,13 @@ sqlplus -s testuser/pass > tabs << EOF <br>
 SET SERVEROUTPUT ON
 SET FEEDBACK OFF
 DECLARE
-   tab_count number;
+   tab_count number; <br>
 BEGIN
    SELECT count(*) INTO tab_count
    FROM employee;
 
    DBMS_OUTPUT.PUT_LINE(tab_count);
-END;
+END; <br>
 /
 EXIT <br>
 EOF 
