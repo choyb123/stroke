@@ -79,7 +79,7 @@ logfile=JDE82_schemas_exp.log </td>
 		<tr>
 			<td> SQLplus return a small numeric value to shell, you can use the EXIT command </td>
 			<td> #!/bin/sh
-sqlplus -s testuser/pass > tabs << EOF
+sqlplus -s testuser/pass > tabs << EOF <br>
 SET SERVEROUTPUT ON
 SET FEEDBACK OFF
 DECLARE
@@ -92,7 +92,7 @@ BEGIN
 END;
 /
 EXIT
-EOF
+EOF <br>
 
 tabcount=`cat tabs`
 echo You have $tabcount empployees. </td>
