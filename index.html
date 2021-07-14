@@ -101,12 +101,12 @@ echo You have $tabcount empployees. </td>
 			<td>Compare tables </td>
 			<td>  (select * from emp_copy
  minus
- select * from emp@lovemom) -- Rows in A that are not in B
+ select * from emp@lovemom) -- Rows in A that are not in B <br>
 union all
 (
  select * from emp@lovemom
  minus
- select * from emp_copy -- rows in B that are not in A
+ select * from emp_copy -- rows in B that are not in A <br>
 )
 /
   </td>
