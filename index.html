@@ -65,6 +65,12 @@ logfile=JDE82_schemas_exp.log </td>
 			<td>  alter user [user_name] quota unlimited on [tablespace_name]; </td>
 		</tr>
 		<tr>
+			<td> Matplotlib multiple graphs in one figure  </td>
+			<td>  ax=df1.loc[df1['location'] == 'Russia'].dropna().tail(20).plot(kind='line',x='date',y='new_cases',label='Russia',color='red') <br>
+			,  df1.loc[df1['location'] == 'France'].dropna().tail(20).plot(ax=ax,kind='line',x='date',y='new_cases',label='France',color='green')<br>
+			</td>
+		</tr>
+		<tr>
 			<td> to import a dump from higher version(12c) to lower version(11g)   </td>
 			<td> need to use VERSION=11.2 parameter while taking export </td>
 		</tr>
