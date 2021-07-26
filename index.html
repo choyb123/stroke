@@ -87,6 +87,18 @@ logfile=JDE82_schemas_exp.log </td>
 			<td> readline.get_current_history_length(), readline.get_history_item(3) </td>
 		</tr>
 		<tr>
+			<td> Extract year from date  </td>
+			<td> select extract(year fron to_date(SA_START, 'dd-mon-yy')) year from mytable ;</td>
+		</tr>
+		<tr>
+			<td> Extract month from date  </td>
+			<td> select extract(month fron to_date(SA_START, 'dd-mon-yy')) month from mytable ;</td>
+		</tr>
+		<tr>
+			<td> Extract day from date  </td>
+			<td> select extract(day fron to_date(SA_START, 'dd-mon-yy')) day from mytable ;</td>
+		</tr>
+		<tr>
 			<td> Python command history file  </td>
 			<td> def history(): <br>
  import readline <br>
