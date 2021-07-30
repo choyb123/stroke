@@ -77,6 +77,10 @@ logfile=JDE82_schemas_exp.log </td>
 			<td> np.count_nonzero(df['district'].unique()) </td>
 		</tr>
 		<tr>
+			<td> Pandas 'xlsx' not supported  </td>
+			<td>pip uninstall xlrd, pip install xlrd==1.2.0 </td>
+		</tr>
+		<tr>
 			<td> Matplotlib multiple graphs in one figure  </td>
 			<td>  ax=df.loc[df['location'] == 'Russia'].dropna().tail(20).plot(kind='line',x='date',y='new_cases',label='Russia',color='red') <br>
 			,  df.loc[df['location'] == 'France'].dropna().tail(20).plot(ax=ax,kind='line',x='date',y='new_cases',label='France',color='green')<br>
