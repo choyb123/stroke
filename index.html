@@ -95,6 +95,10 @@ logfile=JDE82_schemas_exp.log </td>
 			<td> need to use VERSION=11.2 parameter while taking export </td>
 		</tr>
 		<tr>
+			<td>batch with arguments run consecutively   </td>
+			<td> :LOOP <br> if "%1" == "" goto CONT <br> this.sql %1 <br> shift <br> goto LOOP <br> :CONT </td>
+		</tr>
+		<tr>
 			<td> panda search strings in column wild cards  </td>
 			<td> df[df['col'].str.contains(r'foo(?!$)')] </td>
 		</tr>
