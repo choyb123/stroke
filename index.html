@@ -69,6 +69,13 @@ logfile=mydata_schemas_exp.log </td>
 			<td> readline.get_current_history_length(), readline.get_history_item(3) </td>
 		</tr>
 		<tr>
+			<td> Python command history file  </td>
+			<td> def history(): <br>
+ import readline <br>
+ for i in range(1, readline.get_current_history_length()): <br>
+    &nbsp;&nbsp; print("%3d %s" % (i, readline.get_history_item(i))) </td>
+		</tr>
+		<tr>
 			<td> 'utf-8' codec can't decode byte ...  </td>
 			<td>  pd.read_csv('attacks.csv', encoding = "ISO-8859-1")</td>
 		</tr>
@@ -140,13 +147,7 @@ logfile=mydata_schemas_exp.log </td>
 			<td> Extract day from date  </td>
 			<td> select extract(day from to_date(SA_START, 'dd-mon-yy')) day from mytable ;</td>
 		</tr>
-		<tr>
-			<td> Python command history file  </td>
-			<td> def history(): <br>
- import readline <br>
- for i in range(1, readline.get_current_history_length()): <br>
-    &nbsp;&nbsp; print("%3d %s" % (i, readline.get_history_item(i))) </td>
-		</tr>
+		
 		<tr>
 			<td> SQLplus return a small numeric value to shell, you can use the EXIT command </td>
 			<td> #!/bin/sh <br>
