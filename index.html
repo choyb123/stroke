@@ -65,6 +65,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td>  alter user [user_name] quota unlimited on [tablespace_name]; </td>
 		</tr>
 		<tr>
+			<td> Python interactive command history  </td>
+			<td> readline.get_current_history_length(), readline.get_history_item(3) </td>
+		</tr>
+		<tr>
 			<td> 'utf-8' codec can't decode byte ...  </td>
 			<td>  pd.read_csv('attacks.csv', encoding = "ISO-8859-1")</td>
 		</tr>
@@ -124,11 +128,6 @@ logfile=mydata_schemas_exp.log </td>
 			<td> Production, never use "table_exists_action=replace" </td>
 		</tr>
 		
-		
-		<tr>
-			<td> Python interactive command history  </td>
-			<td> readline.get_current_history_length(), readline.get_history_item(3) </td>
-		</tr>
 		<tr>
 			<td> Extract year from date  </td>
 			<td> select extract(year from to_date(SA_START, 'dd-mon-yy')) year from mytable ;</td>
