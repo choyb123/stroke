@@ -85,6 +85,18 @@ logfile=JDE82_schemas_exp.log </td>
 			<td>df = df.to_frame().reset_index() </td>
 		</tr>
 		<tr>
+			<td> panda search strings in column wild cards  </td>
+			<td> df[df['col'].str.contains(r'foo(?!$)')] </td>
+		</tr>
+		<tr>
+			<td> Pandas groupby  </td>
+			<td> n_by_state = df.groupby("state")["last_name"].count() <br> n_by_state.head(10)</td>
+		</tr>
+		<tr>
+			<td> Pandas groupby multiple columns  </td>
+			<td> df.groupby(["state", "gender"])["last_name"].count()</td>
+		</tr>
+		<tr>
 			<td> Copy only table structure  </td>
 			<td>CREATE TABLE emp_copy AS SELECT first_name, last_name, email FROM emp WHERE 1=0; </td>
 		</tr>
@@ -102,10 +114,7 @@ logfile=JDE82_schemas_exp.log </td>
 			<td>batch with arguments run consecutively   </td>
 			<td> :LOOP <br> if "%1" == "" goto CONT <br> this.sql %1 <br> shift <br> goto LOOP <br> :CONT </td>
 		</tr>
-		<tr>
-			<td> panda search strings in column wild cards  </td>
-			<td> df[df['col'].str.contains(r'foo(?!$)')] </td>
-		</tr>
+		
 		<tr>
 			<td> sql escape apostophe  </td>
 			<td> chr(39) || LastName || chr(39) </td>
@@ -114,14 +123,8 @@ logfile=JDE82_schemas_exp.log </td>
 			<td> caution  </td>
 			<td> Production, never use "table_exists_action=replace" </td>
 		</tr>
-		<tr>
-			<td> Pandas groupby  </td>
-			<td> n_by_state = df.groupby("state")["last_name"].count() <br> n_by_state.head(10)</td>
-		</tr>
-		<tr>
-			<td> Pandas groupby multiple columns  </td>
-			<td> df.groupby(["state", "gender"])["last_name"].count()</td>
-		</tr>
+		
+		
 		<tr>
 			<td> Python interactive command history  </td>
 			<td> readline.get_current_history_length(), readline.get_history_item(3) </td>
