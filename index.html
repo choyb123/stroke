@@ -52,10 +52,7 @@ logfile=mydata_schemas_exp.log </td>
 			<td> Column district empty  </td>
 			<td> select * from cm_prem_eng where trim(district) is null; </td>
 		</tr>
-		<tr>
-			<td> Pandas sort by column </td>
-			<td> df.sort_values(col2,ascending=False) | Sort values by col2 in descending order</td>
-		</tr>
+		
 		<tr>
 			<td> comm find difference </td>
 			<td> comm  <(sort file1)  <(sort file2), also, comm <(ls dir1) <(ls dir2)  </td>
@@ -84,6 +81,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> pd.options.display.max_colwidth = 100 </td>
 		</tr>
 		<tr>
+			<td> Pandas sort by column </td>
+			<td> df.sort_values(col2,ascending=False) | Sort values by col2 in descending order</td>
+		</tr>
+		<tr>
 			<td> Pandas unique() return numpy array,count them  </td>
 			<td> np.count_nonzero(df['district'].unique()) </td>
 		</tr>
@@ -106,6 +107,12 @@ logfile=mydata_schemas_exp.log </td>
 		<tr>
 			<td> Pandas groupby multiple columns  </td>
 			<td> df.groupby(["state", "gender"])["last_name"].count()</td>
+		</tr>
+		<tr>
+			<td> Pandas create dataframe  </td>
+			<td> cars = {'col1': ['data11','data12','data13','data14'], <br>
+			          'col2': ['data21', 'data22', 'data23', 'data24'], <br>
+			           'col3' : ['data31', 'data32', 'data33', 'data34']}</td>
 		</tr>
 		<tr>
 			<td> Copy only table structure  </td>
