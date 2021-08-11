@@ -60,6 +60,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> Powershell System Locale  </td>
 			<td>Get-winSystemLocale </td>
 		</tr>
+		<tr>
+			<td> Powershell Patches [-1] selects the most recent installed hotfix </td>
+			<td>(get-hotfix | sort-object -property InstalledOn)[-1]</td>
+		</tr>
 		
 		<tr>
 			<td> comm find difference </td>
