@@ -105,6 +105,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td>  df["date"] = pd.to_datetime(df["date"]) <br> df = df.sort_values(by="date")</td>
 		</tr>
 		<tr>
+			<td> Count total NaN at each column in a DataFrame </td>
+			<td>  df.isnull().sum()</td>
+		</tr>
+		<tr>
 			<td> Print long text in Pandas column  </td>
 			<td> pd.options.display.max_colwidth = 100 </td>
 		</tr>
