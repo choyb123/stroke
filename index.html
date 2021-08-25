@@ -94,6 +94,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> readline.get_current_history_length(), readline.get_history_item(3) </td>
 		</tr>
 		<tr>
+			<td> Python find and replace  </td>
+			<td>import fileinput <br> import re <br> for line in fileinput.input():<br>&nbsp;&nbsp; line = re.sub('foo','bar', line.rstrip())<br>&nbsp;&nbsp;print(line)<br> </td>
+		</tr>
+		<tr>
 			<td> Python command history file  </td>
 			<td> def history(): <br>
  import readline <br>
