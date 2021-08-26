@@ -72,7 +72,11 @@ logfile=mydata_schemas_exp.log </td>
 			<td> Powershell Patches, [-1] selects the most recent installed hotfix </td>
 			<td>(get-hotfix | sort-object -property InstalledOn)[-1]</td>
 		</tr>
-		
+		<tr>
+			<td> argparse </td>
+			<td> import argparse<br>parser = argparse.ArgumentParser()<br>
+			parser.add_argument('--name', type=str, required=True)<br>args = parser.parse_args()</td>
+		</tr>
 		<tr>
 			<td> comm find difference </td>
 			<td> comm  <(sort file1)  <(sort file2), also, comm <(ls dir1) <(ls dir2)  </td>
