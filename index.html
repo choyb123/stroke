@@ -86,6 +86,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> chcp 950  </td>
 		</tr>
 		<tr>
+			<td> pandas convert currency data to float </td>
+			<td> df['Sales'] = df['Sales'].replace({'\$': '', ',': ''}, regex=True).astype(float) </td>
+		</tr>
+		<tr>
 			<td> pandas read trad chinese </td>
 			<td> chcp 950 <br> Then read using encoding = 'Big5-HKSCS' </td>
 		</tr>
