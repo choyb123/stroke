@@ -54,6 +54,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td>  SQL>  alter system set local_listener='(ADDRESS=(PROTOCOL=TCP)(HOST=yourIP)(PORT=1521))';  </td>
 		</tr>
 		<tr>
+			<td>  tablespace used within datapump dump file </td>
+			<td> impdp directory=expdir dumpfile=myexp.dmp sqlfile=myddl.sql </td>
+		</tr>
+		<tr>
 			<td> Column district empty  </td>
 			<td> select * from cm_prem_eng where trim(district) is null; </td>
 		</tr>
