@@ -96,6 +96,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> chcp 950  </td>
 		</tr>
 		<tr>
+			<td>Could not load DH parameters from /path/to/stunnel.pem  </td>
+			<td> dd if=/dev/urandom count=2 | openssl dhparam -rand - 512 >> stunnel.pem </td>
+		</tr>
+		<tr>
 			<td> Remove rows with contents(HOUSE 1) on column (COL1) </td>
 			<td>df[~df['COL1'].isin(['HOUSE 1'])]  </td>
 		</tr>
