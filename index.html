@@ -79,6 +79,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td>compare-object (get-content one.txt) (get-content two.txt)</td>
 		</tr>
 		<tr>
+			<td> Powershell listening port  </td>
+			<td>Get-NetTCPConnection -State Listen</td>
+		</tr>
+		<tr>
 			<td> Powershell Patches, [-1] selects the most recent installed hotfix </td>
 			<td>(get-hotfix | sort-object -property InstalledOn)[-1]</td>
 		</tr>
