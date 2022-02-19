@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<input type="text" id="search" placeholder="Type to search">
 	<table class="table table-hover">
 		<colgroup>
        <col span="1" style="width: 25%;">
@@ -362,6 +363,17 @@ union all <br>
 		</tr>
 		<tr>
 	</table>
-
+<script>
+var $rows = $('#table tr');
+$('#search').keyup(function() {
+    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+    
+    $rows.show().filter(function() {
+        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+        return !~text.indexOf(val);
+    }).hide();
+})
+				
+</scriipt>
 </body>
 </html>
