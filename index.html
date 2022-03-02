@@ -195,6 +195,7 @@ logfile=mydata_schemas_exp.log </td>
 			<td> pandas export to csv without index </td>
 			<td> df.to_csv('data.csv', index=False) </td>
 		</tr>
+				
 		<tr>
 			<td> alter user quota  </td>
 			<td>  alter user [user_name] quota unlimited on [tablespace_name]; </td>
@@ -241,6 +242,10 @@ logfile=mydata_schemas_exp.log </td>
 		<tr>
 				<td> str.contains ignore NaN   </td>
 				<td> df[df['col'].str.contains('CFG', na=False)]</td>
+		</tr>
+		<tr>
+				<td> str.contains pattern   </td>
+				<td> df[df['col'].str.contains("foo") == True]</td>
 		</tr>
 		<tr>
 			<td> Print long text in Pandas column  </td>
