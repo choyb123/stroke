@@ -239,6 +239,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> df.dropna()</td>
 		</tr>
 		<tr>
+				<td> str.contains ignore NaN   </td>
+				<td> df[df['col'].str.contains('CFG', na=False)]</td>
+		</tr>
+		<tr>
 			<td> Print long text in Pandas column  </td>
 			<td> pd.options.display.max_colwidth = 100 </td>
 		</tr>
