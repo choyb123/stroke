@@ -168,6 +168,11 @@ logfile=mydata_schemas_exp.log </td>
 			<td> df = pd.DataFrame(numpy_array)  </td>
 		</tr>
 		<tr>
+			<td> dataframe unique values</td>
+			<td> df[['col1','col2','col3']].dropna().value_counts().index.values  </td>	
+				
+		</tr>
+		<tr>
 			<td> Pandas drop last n rows</td>
 			<td> df.drop(df.tail(n).index,inplace=True)  </td>
 		</tr>
