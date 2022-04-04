@@ -148,6 +148,14 @@ logfile=mydata_schemas_exp.log </td>
 			<td> df["somecol"] = pd.to_datetime(df["somecol"]) </td>
 		</tr>
 		<tr>
+			<td> Selecting columns based on their data type </td>
+			<td> df.loc[:,(df.dtypes=='float64').values] </td>
+		</tr>
+		<tr>
+			<td> Selecting a subset of columns based on difference of columns</td>
+			<td> df[df.columns.difference([‘alcohol’,’hue’])] </td>
+		</tr>
+		<tr>
 			<td>Could not load DH parameters from /path/to/stunnel.pem  </td>
 			<td> dd if=/dev/urandom count=2 | openssl dhparam -rand - 512 >> stunnel.pem </td>
 		</tr>
