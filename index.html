@@ -335,6 +335,7 @@ logfile=mydata_schemas_exp.log </td>
 		<tr>
 			<td> Matplotlib multiple graphs in one figure  </td>
 			<td> fig, ax = plt.subplots() <br> 
+				ax = plt.gca() <br>
 			1. ax=df.loc[df['location'] == 'Russia'].dropna().tail(20).plot(kind='line',x='date',y='new_cases',label='Russia',color='red') <br>
 			 2. df.loc[df['location'] == 'France'].dropna().tail(20).plot(ax=ax,kind='line',x='date',y='new_cases',label='France',color='green')<br>
 			</td>
