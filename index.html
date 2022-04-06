@@ -164,6 +164,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> df.loc[:,(df.dtypes=='float64').values] </td>
 		</tr>
 		<tr>
+			<td> add new column with month from date </td>
+			<td> df['month'] = pd.DatetimeIndex(df['date']).month </td>
+		</tr>
+		<tr>
 			<td> split 'Address' column into multiple columns based on comma </td>
 			<td>  df[['Street', 'City', 'State']] = df['Address'].str.split(',', expand=True)</td>
 		</tr>
