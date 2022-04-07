@@ -148,6 +148,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> df["somecol"] = pd.to_datetime(df["somecol"]) </td>
 		</tr>
 		<tr>
+			<td> Display data contains 'Asia' </td>
+			<td> df[df['col'].str.contains('Asia')] </td>
+		</tr>
+		<tr>
 			<td>  Selecting columns if any row of a column meets a condition</td>
 			<td> df.loc[:,[(df[col] > 14).any() for col in df.columns]]</td>
 		</tr>
