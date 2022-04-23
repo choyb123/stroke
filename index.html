@@ -93,6 +93,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> edit two, three or four versions of a file with Vim and show differences</td>
 		</tr>
 		<tr>
+			<td>Awk to print distinct col values  </td>
+			<td>cut -d , -f2 file | sort | uniq , awk -F , '{ a[$2]++ } END { for (b in a) { print b } }' file </td>
+		</tr>
+		<tr>
 			<td> Type letter show numbers  </td>
 			<td> press [Fn] + [Numlk]. Depending on the model, you may need to press [Fn] + [Shift] + [Numlk] </td>
 		</tr>
