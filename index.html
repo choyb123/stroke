@@ -94,7 +94,7 @@ logfile=mydata_schemas_exp.log </td>
 		</tr>
 		<tr>
 			<td>Awk to print distinct col values  </td>
-			<td>cut -d , -f2 file | sort | uniq , awk -F , '{ a[$2]++ } END { for (b in a) { print b } }' file </td>
+			<td>1. cut -d , -f2 file | sort | uniq   2. awk -F , '{ a[$2]++ } END { for (b in a) { print b } }' file </td>
 		</tr>
 		<tr>
 			<td> Type letter show numbers  </td>
