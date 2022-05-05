@@ -362,7 +362,7 @@ logfile=mydata_schemas_exp.log </td>
 		</tr>
 		<tr>
 			<td>batch with arguments run consecutively   </td>
-			<td> :LOOP <br> if "%1" == "" goto CONT <br> this.sql %1 <br> shift <br> goto LOOP <br> :CONT </td>
+			<td> :LOOP <br> if "%1" == "" goto BYE <br> this.sql %1 <br> shift <br> goto LOOP <br> :BYE </td>
 		</tr>
 		
 		<tr>
