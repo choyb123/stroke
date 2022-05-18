@@ -27,3 +27,4 @@ body {
 .stt:active {
   opacity: 1;
 }
+:root { scroll-behavior: smooth; }
