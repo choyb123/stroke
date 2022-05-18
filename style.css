@@ -6,7 +6,7 @@ table, th, td {
 body {
   background-color: papayawhip;
 }
-
+:root { scroll-behavior: smooth; }
 .stt {
   position: fixed;
   right: 1rem;
@@ -27,4 +27,4 @@ body {
 .stt:active {
   opacity: 1;
 }
-:root { scroll-behavior: smooth; }
+
