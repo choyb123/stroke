@@ -172,6 +172,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> df.loc[:,[(df[col] > 14).any() for col in df.columns]]</td>
 		</tr>
 		<tr>
+			<td>  delete row</td>
+			<td> df.drop(index), index for row</td>
+		</tr>
+		<tr>
 			<td> Selecting columns based on their column name containing a string wildcard</td>
 			<td>df.loc[:,[True if re.search('flava+',column) else False for column in df.columns]]</td>
 		</tr>
