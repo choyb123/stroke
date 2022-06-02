@@ -164,6 +164,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> df[df['col'].str.contains('Asia')] </td>
 		</tr>
 		<tr>
+			<td> Display data equals 'Asia' </td>
+			<td> df[df['col'].str.strip()=='Asia'] </td>
+		</tr>
+		<tr>
 			<td>  Display duplicate rows</td>
 			<td> print(df[df.duplicated(keep=False)]) </td>
 		</tr>	
