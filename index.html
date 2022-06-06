@@ -196,6 +196,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> df['month'] = pd.DatetimeIndex(df['date']).month </td>
 		</tr>
 		<tr>
+			<td> print a dictionary </td>
+			<td> print(json.dumps(mydict, indent = 4)) </td>
+		</tr>
+		<tr>
 			<td> split 'Address' column into multiple columns based on comma </td>
 			<td>  df[['Street', 'City', 'State']] = df['Address'].str.split(',', expand=True)</td>
 		</tr>
