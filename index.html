@@ -117,6 +117,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td> Powershell listening port  </td>
 			<td>Get-NetTCPConnection -State Listen</td>
 		</tr>
+			<tr>
+			<td>Python modules uninstall  </td>
+			<td>pip freeze > requirements.txt, pip uninstall -r requirements.txt -y</td>
+		</tr>
 		<tr>
 			<td> Powershell Patches, [-1] selects the most recent installed hotfix </td>
 			<td>(get-hotfix | sort-object -property InstalledOn)[-1]</td>
