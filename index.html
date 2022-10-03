@@ -88,6 +88,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td>tcpdump -i eth1 udp port 5060 or udp portrange 10500-11652 -s 0 -w filename.cap </td>
 		</tr>
 		<tr>
+			<td> Django says that MySQL does not allow unique CharFields to have a max_length > 255, but it does  </td>
+			<td>SILENCED_SYSTEM_CHECKS = ['mysql.E001'] </td>
+		</tr>
+		<tr>
 			<td> Tunnel autossh  </td>
 			<td>su - tmh -c "autossh -M 0 -o 'ServerAliveInterval 30' -o 'ServerAliveCountMax
 3' -N tmh@www.xxx.com -p 22 -R 12071:localhost:22 -C " </td>
