@@ -104,6 +104,10 @@ logfile=mydata_schemas_exp.log </td>
 			<td>pip install mysqlclient==2.1.0 </td>
 		</tr>
 		<tr>
+			<td> mysql import sql file </td>
+			<td>mysql -u username -p database_name < file.sql </td>
+		</tr>
+		<tr>
 			<td> Tunnel autossh  </td>
 			<td>su - tmh -c "autossh -M 0 -o 'ServerAliveInterval 30' -o 'ServerAliveCountMax
 3' -N tmh@www.xxx.com -p 22 -R 12071:localhost:22 -C " </td>
